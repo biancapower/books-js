@@ -1,4 +1,4 @@
-let isbn = prompt("Please enter ISBN", "0449212602");
+var isbn = prompt("Please enter ISBN", "0449212602");
 
 $.getJSON(`https://openlibrary.org/api/books?bibkeys=ISBN:${isbn}&jscmd=data&format=json`, function(data) {
     //JSON is in "data"
